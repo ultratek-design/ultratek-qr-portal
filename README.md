@@ -6,7 +6,7 @@ This GitHub Pages site powers ULTRATEK’s QR destination—scanned from murals,
 ---
 
 ## 🔗 Live Site
-(https://ultratekgames.github.io/ultratek-qr-portal)
+( https://ultratek-design.github.io/ultratek-qr-portal/)
 
 ---
 
