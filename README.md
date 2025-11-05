@@ -33,7 +33,7 @@ Includes map link and directions.
 1. Push all files to your GitHub repo
 2. Go to **Settings > Pages**
 3. Set source to `main` branch, `/root`
-4. Your site will be live at `https://yourusername.github.io/ultratek-qr-portal`
+4. Your site will be live at `https://ultratek-design.github.io/ultratek-qr-portal/`
 
 ---
 
