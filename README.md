@@ -54,7 +54,13 @@ Feel free to remix, expand, or fork for your own creative systems.
 **Decode the Wall. Play the System.**
 
 
-- Instagram: [@ultratek_futa](https://instagram.com/ultratek_futa)  
+- Instagram: [@ultratek_futa](https://instagram.com/ultratek_futa)
+  
+- ## 🔗 Scan to Visit ULTRATEK QR Portal
+
+![QR Code](qr-code.png)
+
+
 - WhatsApp broadcast link
 
 ---
