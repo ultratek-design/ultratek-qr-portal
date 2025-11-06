@@ -1,98 +1,95 @@
-# ULTRATEK Hub
+# 🎮 ULTRATEK
 
-**Built for Play. Engineered for Meaning.**
-
-Welcome to ULTRATEK—Akure’s premier gaming and creative tech space, located at FUTA Northgate. This site serves as our digital headquarters, QR destination, and symbolic decoder. Whether you're here to play, collaborate, or remix, you're in the right place.
-
----
-
-## 🎮 What Is ULTRATEK?
-
-ULTRATEK is a modular gaming-tech hub powered by symbolic overlays, geometric murals, and remixable digital systems. We host tournaments, chill zones, creative workshops, and a growing network of student ambassadors.
+**Gaming. Tech. Print. Symbolic Infrastructure.**  
+Near FUTA Northgate, ULTRATEK is a modular hub for console battles, PC scrims, table tennis duels, quick print services, and symbolic overlays that connect physical zones to digital portals.
 
 ---
 
-## 🧠 Explore the Space
-
-| Glyph | Zone Name       | Description                          |
-|-------|------------------|--------------------------------------|
-| 🧠    | Consciousness     | Symbolic overlays, mural decoding    |
-| 🎮    | Console Zone      | PS5, FIFA, Mortal Kombat             |
-| 🎱    | Pool Table        | Chill zone, casual play              |
-| ⭐    | Tournament Arena  | Competitive FIFA, prizes             |
-| 🧩    | Board Games       | Chess, Scrabble, strategy sessions   |
-| ⏯    | VR Pod            | Immersive headset experiences        |
-| ⚫    | Snack Station     | Exotic snacks, branded treats          |
-| 🔺    | Movement Zone     | Entry/exit flow, symbolic transitions |
-| 🏓    | Table Tennis      | Fast-paced matches, casual and competitive play |
+## 🧭 NAVIGATION  
+[Home](#ultratek) • [Services](#services) • [Print](#print-services) • [Symbols](#symbolic-system) • [Events](#events--engagement) • [Explore](#explore-digitally)
 
 ---
 
-## 📍 Location
+## 🕹️ SERVICES
 
-**Aluta Marker, Last V’ing — FUTA Northgate, Akure**  
-Open daily: **10 AM – 10 PM**
+### 🎮 Console Zone  
+**PS5, FIFA, Mortal Kombat, NBA 2K**  
+Casual play, head-to-head matches, and tournaments.
 
----
+### 💻 PC LAN  
+**Steam titles, team scrims, solo grind**  
+Networked gaming PCs for competitive and casual sessions.
 
-## 🚀 Launch & Events
+### 🏓 Table Tennis  
+**Singles, doubles, leaderboard challenges**  
+Fast-paced physical gaming with ambassador tie-ins.
 
-- **Grand Opening:** January 10, 2026  
-- **Tournaments:** Weekly FIFA and Table Tennis brackets  
-- **Workshops:** Symbolic decoding, mural remixing, creative tech onboarding
+### 🎱 Pool Table  
+**Chill zone for casual and competitive play**
 
----
+### 🧩 Board Games  
+**Chess, Scrabble, Uno, Ludo**  
+Low-tech strategy and social play.
 
-## 🧩 Symbolic Decoder
+### 📺 Big Screen TV  
+**Premier League, esports, anime**  
+Lounge-style viewing for community events.
 
-ULTRATEK’s murals are more than decoration—they’re interactive maps. Each glyph links to a zone, a concept, or a role. Scan the wall, decode the system, and explore the logic.
-
----
-
-## 🧠 Become an Ambassador
-
-Join our outreach and creative team. Ambassadors get:
-- Free game time and snacks  
-- Early access to events  
-- Custom merch and social features  
-- Priority mural and digital collab roles
-
-👉 [Visit the Ambassador Portal](https://ultratek-hub.github.io/ambassadors/)
+### ⚫ Snack Station  
+**Branded snacks and ambient hangout**
 
 ---
 
-## 🛠 Remix & Contribute
+## 🖨️ PRINT SERVICES
 
-This site is open-source and modular. Fork it, remix it, and build your own symbolic system.
+### ⚡ Quick Print  
+**A4 / A3 — Color or B&W**  
+Assignments, resumes, flyers, forms. Same-day turnaround.
 
-- Symbol dictionary and mural overlays coming soon  
-- QR logic and layout documented in this repo  
-- Contributions welcome via pull requests
+### 📐 Large Format  
+**Posters, banners, architectural sheets**  
+Printed on HP DesignJet T230 — up to 24" wide.
 
----
-
-## 📱 Connect
-
-- Instagram: [@ultratek_futa](https://instagram.com/ultratek_futa)  
-- WhatsApp Broadcast: Ask at the hub  
-- GitHub: [ULTRATEK-HUB](https://github.com/ultratek-hub)
-
----
-
-**ULTRATEK is more than a space—it’s a system. Decode it. Remix it. Lead the movement.**
-
-
-  
-- ## 🔗 Scan to Visit ULTRATEK QR Portal
-
-![QR Code](qr code.png)
-
-
-
-
-- WhatsApp broadcast link
+### 🧠 Add-Ons  
+- QR codes on posters  
+- Symbolic overlays for remixable visuals  
+- Layout support for clean output
 
 ---
 
-## 📁 Repo Structure
+## 🧠 SYMBOLIC SYSTEM
 
+ULTRATEK uses glyphs and overlays to guide movement, encode meaning, and trigger digital access.
+
+- [Zone Glyphs](murals/symbols/glyph-grid.svg)  
+- [Ambient Glyphs](murals/symbols/environmental-glyphs.md)  
+- [QR Guide](murals/overlays/qr-placement-guide.svg)
+
+> Scan a glyph. Enter a zone. Remix the system.
+
+---
+
+## 🏆 EVENTS & ENGAGEMENT
+
+- Weekly tournaments with prizes  
+- Ambassador program for students  
+- QR portal access to schedules and sign-ups
+
+---
+
+## 📡 EXPLORE DIGITALLY
+
+- [Ambassador Sign-Up](ambassadors/signup.md)  
+- [Remix Guide](murals/install-guides/remix-guide.md)  
+- [Zone Mapping](murals/overlays/zone-mapping.svg)
+
+---
+
+## 📸 LIVE PHOTOS COMING SOON
+
+Real images of ULTRATEK’s zones, tournaments, and mural fragments will be added here soon.
+
+---
+
+> **ULTRATEK is not just a gaming hub—it's a remixable system of play, tech, and symbolic movement.**  
+> Join us. Compete. Create. Expand.
