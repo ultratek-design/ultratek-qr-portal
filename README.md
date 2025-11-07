@@ -1,95 +1,60 @@
-# 🎮 ULTRATEK
+# 🎮 ULTRATEK-GAMES
 
 **Gaming. Tech. Print. Symbolic Infrastructure.**  
-Near FUTA Northgate, ULTRATEK is a modular hub for console battles, PC scrims, table tennis duels, quick print services, and symbolic overlays that connect physical zones to digital portals.
+ULTRATEK-GAMES is the public-facing site for ULTRATEK—a modular gaming and tech hub near FUTA Northgate. This repo powers the GitHub Pages site that showcases our gaming zones, print services, symbolic overlays, and event logic.
 
 ---
 
-## 🧭 NAVIGATION  
-[Home](#ultratek) • [Services](#services) • [Print](#print-services) • [Symbols](#symbolic-system) • [Events](#events--engagement) • [Explore](#explore-digitally)
+## 🔗 Live Site
+
+Visit: [https://ultratek-hub.github.io/ultratek-games](https://ultratek-hub.github.io/ultratek-games)
 
 ---
 
-## 🕹️ SERVICES
+## 🧱 Repo Structure
 
-### 🎮 Console Zone  
-**PS5, FIFA, Mortal Kombat, NBA 2K**  
-Casual play, head-to-head matches, and tournaments.
-
-### 💻 PC LAN  
-**Steam titles, team scrims, solo grind**  
-Networked gaming PCs for competitive and casual sessions.
-
-### 🏓 Table Tennis  
-**Singles, doubles, leaderboard challenges**  
-Fast-paced physical gaming with ambassador tie-ins.
-
-### 🎱 Pool Table  
-**Chill zone for casual and competitive play**
-
-### 🧩 Board Games  
-**Chess, Scrabble, Uno, Ludo**  
-Low-tech strategy and social play.
-
-### 📺 Big Screen TV  
-**Premier League, esports, anime**  
-Lounge-style viewing for community events.
-
-### ⚫ Snack Station  
-**Branded snacks and ambient hangout**
+- `index.html` — Homepage with gaming zones and symbolic overlays
+- `style.css` — Unified styling
+- `assets/` — Glyphs, QR codes, zone icons
+- `events/` — Tournament logic and sign-up forms
+- `murals/` — Symbolic overlays and glyph guides (linked externally)
+- `ambassadors/` — Role logic and onboarding (linked externally)
 
 ---
 
-## 🖨️ PRINT SERVICES
+## 🕹️ Core Zones
 
-### ⚡ Quick Print  
-**A4 / A3 — Color or B&W**  
-Assignments, resumes, flyers, forms. Same-day turnaround.
-
-### 📐 Large Format  
-**Posters, banners, architectural sheets**  
-Printed on HP DesignJet T230 — up to 24" wide.
-
-### 🧠 Add-Ons  
-- QR codes on posters  
-- Symbolic overlays for remixable visuals  
-- Layout support for clean output
+- Console Zone (PS5, FIFA, Mortal Kombat, NBA 2K)  
+- PC LAN (Steam titles, scrims, solo grind)  
+- Table Tennis & Pool  
+- Board Games (Chess, Scrabble, Uno, Ludo)  
+- Big Screen TV (Premier League, esports, anime)
 
 ---
 
-## 🧠 SYMBOLIC SYSTEM
+## 🖨️ Print Services
 
-ULTRATEK uses glyphs and overlays to guide movement, encode meaning, and trigger digital access.
-
-- [Zone Glyphs](murals/symbols/glyph-grid.svg)  
-- [Ambient Glyphs](murals/symbols/environmental-glyphs.md)  
-- [QR Guide](murals/overlays/qr-placement-guide.svg)
-
-> Scan a glyph. Enter a zone. Remix the system.
+- A4/A3 quick prints  
+- Large format posters (up to 24″ wide)  
+- QR overlays and symbolic layout support
 
 ---
 
-## 🏆 EVENTS & ENGAGEMENT
+## 🧠 Symbolic System
 
-- Weekly tournaments with prizes  
-- Ambassador program for students  
-- QR portal access to schedules and sign-ups
-
----
-
-## 📡 EXPLORE DIGITALLY
-
-- [Ambassador Sign-Up](ambassadors/signup.md)  
-- [Remix Guide](murals/install-guides/remix-guide.md)  
-- [Zone Mapping](murals/overlays/zone-mapping.svg)
+ULTRATEK uses glyphs and overlays to encode meaning, guide movement, and trigger digital access.  
+Linked resources:
+- [`murals`](https://github.com/ultratek-hub/murals) — Symbol dictionary, elevation overlays  
+- [`ambassadors`](https://github.com/ultratek-hub/ambassadors) — Role logic and sign-up  
+- [`events`](https://github.com/ultratek-hub/events) — Tournament schedules and RSVP forms  
+- [`docs`](https://github.com/ultratek-hub/docs) — Remix guides and painter onboarding
 
 ---
 
-## 📸 LIVE PHOTOS COMING SOON
+## 🏗️ Contributor Logic
 
-Real images of ULTRATEK’s zones, tournaments, and mural fragments will be added here soon.
-
----
-
-> **ULTRATEK is not just a gaming hub—it's a remixable system of play, tech, and symbolic movement.**  
-> Join us. Compete. Create. Expand.
+This repo is modular. Each zone or service has its own HTML logic and symbolic overlays.  
+To contribute:
+1. Fork the repo
+2. Add or update zone logic
+3. Submit a pull request with clear commit messages
