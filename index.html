@@ -5,6 +5,66 @@
   <title>ULTRATEK Hub</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    /* 🔝 Mobile Header */
+    .mobile-header {
+      position: sticky;
+      top: 0;
+      background: #0a74da;
+      color: #fff;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+    }
+    .mobile-header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    #menu-toggle {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* 📱 Side Menu */
+    .side-menu {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 220px;
+      height: 100%;
+      background: #222;
+      color: #fff;
+      padding-top: 4rem;
+      transition: left 0.3s ease;
+      z-index: 999;
+    }
+    .side-menu ul {
+      list-style: none;
+      padding: 0;
+    }
+    .side-menu li {
+      padding: 1rem;
+      border-bottom: 1px solid #444;
+    }
+    .side-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .side-menu a.active {
+      background-color: #0a74da;
+      color: #fff;
+      border-radius: 4px;
+    }
+    .side-menu.open {
+      left: 0;
+    }
+
+    /* 🏠 Hero Section */
     .hero {
       text-align: center;
       padding: 3rem 1rem;
@@ -19,6 +79,7 @@
       font-size: 1.2rem;
     }
 
+    /* 🧭 Zone Grid */
     .zone-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -42,6 +103,17 @@
       background: #e0e0e0;
     }
 
+    /* 🔥 Featured Zone */
+    #zone-highlight {
+      text-align: center;
+      padding: 2rem;
+      background: #f9f9f9;
+    }
+    #zone-highlight h2 {
+      color: #0a74da;
+    }
+
+    /* 📡 Footer */
     .footer {
       text-align: center;
       padding: 2rem;
@@ -56,8 +128,14 @@
 </head>
 <body>
 
-  <!-- 🔗 Navbar -->
-  <nav class="navbar">
+  <!-- 🔝 Sticky Header -->
+  <header class="mobile-header">
+    <button id="menu-toggle">☰</button>
+    <h1>ULTRATEK</h1>
+  </header>
+
+  <!-- 📱 Side Menu -->
+  <nav id="side-menu" class="side-menu">
     <ul>
       <li><a href="index.html">🏠 Home</a></li>
       <li><a href="console.html">🎮 Console</a></li>
@@ -79,6 +157,12 @@
     <p>Modular gaming, immersive zones, and practical services—right outside FUTA Northgate.</p>
   </section>
 
+  <!-- 🔥 Featured Zone -->
+  <section id="zone-highlight">
+    <h2>🔥 Featured Zone</h2>
+    <div id="zone-content"></div>
+  </section>
+
   <!-- 🧭 Zone Navigation -->
   <section class="zone-grid">
     <a href="console.html">🎮 Console Zone</a>
@@ -97,6 +181,69 @@
   <footer class="footer">
     <p>Explore more zones or <a href="reservations.html">book your time</a> now.</p>
   </footer>
+
+  <!-- 🧠 Scripts -->
+  <script>
+    // 🔘 Toggle Side Menu
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('side-menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+
+    // 👉 Swipe Gesture Logic
+    let touchStartX = 0;
+    let touchEndX = 0;
+    document.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+    document.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    });
+    function handleSwipe() {
+      const swipeDistance = touchEndX - touchStartX;
+      if (swipeDistance > 80) {
+        menu.classList.add('open');
+      } else if (swipeDistance < -80) {
+        menu.classList.remove('open');
+      }
+    }
+
+    // ✨ Active Zone Highlight
+    const currentPage = window.location.pathname.split("/").pop();
+    const menuLinks = document.querySelectorAll("#side-menu a");
+    menuLinks.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+
+    // 🔥 Dynamic Featured Zone
+    const zones = [
+      {
+        name: "PC LAN",
+        description: "Scrim-ready setups, Black Ops II, MW2, and FIFA23.",
+        icon: "💻"
+      },
+      {
+        name: "Console",
+        description: "Couch battles with Mortal Kombat, FIFA, and Spider-Man.",
+        icon: "🎮"
+      },
+      {
+        name: "VR",
+        description: "Immersive headset experiences—first-person shooters and rhythm games.",
+        icon: "🕶️"
+      }
+    ];
+    const featured = zones[Math.floor(Math.random() * zones.length)];
+    const zoneDiv = document.getElementById("zone-content");
+    zoneDiv.innerHTML = `
+      <h3>${featured.icon} ${featured.name}</h3>
+      <p>${featured.description}</p>
+    `;
+  </script>
 
 </body>
 </html>
