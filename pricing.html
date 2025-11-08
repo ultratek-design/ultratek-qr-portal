@@ -2,72 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>ULTRATEK Pricing</title>
+  <title>ULTRATEK Pricing Strategy</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .pricing-hero {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: #0a74da;
-      color: #fff;
-    }
-    .pricing-hero h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.5rem;
-    }
-    .pricing-hero p {
-      font-size: 1.1rem;
-      color: #eee;
-    }
-
     .pricing-section {
-      padding: 2rem;
       max-width: 1000px;
       margin: auto;
-      text-align: center;
+      padding: 2rem;
     }
     .pricing-section h2 {
       color: #0a74da;
-      margin-bottom: 1rem;
+      margin-top: 2rem;
     }
     .pricing-section p {
       color: #555;
+      margin-bottom: 1rem;
+    }
+    .pricing-block {
+      background: #f9f9f9;
+      padding: 1rem 1.5rem;
       margin-bottom: 2rem;
+      border-left: 4px solid #0a74da;
+      border-radius: 6px;
     }
-
-    .pricing-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 1rem;
+    .pricing-block h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
     }
-    .pricing-table th,
-    .pricing-table td {
-      padding: 0.75rem;
-      border: 1px solid #ddd;
+    .pricing-block ul {
+      padding-left: 1rem;
     }
-    .pricing-table th {
-      background-color: #f4f4f4;
-      color: #333;
+    .pricing-block li {
+      margin-bottom: 0.5rem;
     }
-    .pricing-table tr:nth-child(even) {
-      background-color: #fafafa;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-    footer a {
-      color: #0a74da;
-      text-decoration: none;
+    .why {
+      font-style: italic;
+      color: #888;
+      margin-top: 0.5rem;
     }
   </style>
 </head>
 <body>
 
-  <!-- 🔝 Sticky Header -->
+  <!-- 🔝 Header -->
   <header class="mobile-header">
     <button id="menu-toggle">☰</button>
     <h1>ULTRATEK</h1>
@@ -91,33 +68,86 @@
     </ul>
   </nav>
 
-  <!-- 💸 Hero Section -->
-  <section class="pricing-hero">
-    <h1>💸 ULTRATEK Pricing</h1>
-    <p>Ask about membership to save time, earn reward points, and unlock free games!</p>
-  </section>
-
-  <!-- 📋 Pricing Table -->
+  <!-- 💸 Pricing Strategy -->
   <section class="pricing-section">
-    <h2>🎮 Services & Rates</h2>
-    <table class="pricing-table">
-      <thead>
-        <tr>
-          <th>Service</th>
-          <th>Players</th>
-          <th>Price</th>
-          <th>Duration</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Table Tennis</td><td>2</td><td>₦500</td><td>30 mins</td></tr>
-        <tr><td>PS5 & Xbox-X Games</td><td>1</td><td>₦500</td><td>30 mins</td></tr>
-        <tr><td>Pool</td><td>2</td><td>₦500</td><td>30 mins</td></tr>
-        <tr><td>PC Games</td><td>1</td><td>₦500</td><td>30 mins</td></tr>
-        <tr><td>Live Soccer Viewing</td><td>Up to 20</td><td>₦500</td><td>1 match</td></tr>
-        <tr><td>Group Party</td><td>Up to 20</td><td>Ask</td><td>3-hour slot</td></tr>
-      </tbody>
-    </table>
+    <h2>🎯 ULTRATEK Pricing Strategy</h2>
+
+    <div class="pricing-block">
+      <h3>🎮 PC Gaming (4 stations)</h3>
+      <ul>
+        <li>Standard Rate: ₦500/hr</li>
+        <li>₦1,200 for 3 hrs (₦400/hr)</li>
+        <li>₦4,000 for 12 hrs (valid 1 week)</li>
+      </ul>
+      <p class="why">Students who buy bulk spend more hours, and you lock in cash up front.</p>
+    </div>
+
+    <div class="pricing-block">
+      <h3>🎮 Console Gaming (PS5/Xbox)</h3>
+      <ul>
+        <li>Standard Rate: ₦600/hr</li>
+        <li>Multiplayer Special: 2 players for ₦1,000/hr</li>
+        <li>Weekend Tournament Entry: ₦1,500/player (winner gets snacks + 2 hrs)</li>
+      </ul>
+      <p class="why">FUTA crowds love FIFA tournaments — they’ll fill Zone 3 spectators’ area.</p>
+    </div>
+
+    <div class="pricing-block">
+      <h3>🕶️ VR Gaming (1 booth)</h3>
+      <ul>
+        <li>Standard Rate: ₦500 for 20 mins (₦1,500/hr)</li>
+        <li>Group Package: 4 friends = ₦1,800 (20 mins each)</li>
+      </ul>
+      <p class="why">VR is new + premium. A group deal makes students “test” it together.</p>
+    </div>
+
+    <div class="pricing-block">
+      <h3>🎱 Pool Table (Zone 2)</h3>
+      <ul>
+        <li>Standard Rate: ₦200/game (10–15 mins)</li>
+        <li>Mini Tournament: ₦500 entry (winner gets snacks coupon)</li>
+      </ul>
+      <p class="why">Pool is highly social, tournaments = constant activity in Zone 2.</p>
+    </div>
+
+    <div class="pricing-block">
+      <h3>🍔 Snacks & Drinks</h3>
+      <ul>
+        <li>Standard Items: ₦200–₦400 (rolls, drinks, shawarma mini, noodles/egg)</li>
+        <li>Gamer Pack: drink + noodles + 1 hr PC = ₦900</li>
+        <li>Duo Pack: 2 drinks + 2 snacks + 2 hrs console = ₦2,000</li>
+      </ul>
+      <p class="why">Bundles increase average spend per customer.</p>
+    </div>
+
+    <div class="pricing-block">
+      <h3>🖨️ Printing & Photocopy (Zone 1)</h3>
+      <ul>
+        <li>Standard: ₦30/page</li>
+        <li>Bulk: ₦250 for 10 pages (₦25 each)</li>
+      </ul>
+      <p class="why">Students always print — cheap bulk keeps them coming daily.</p>
+    </div>
+
+    <div class="pricing-block">
+      <h3>🏆 Memberships (Optional)</h3>
+      <ul>
+        <li>Silver Card (₦5,000/month): 15 hrs PC + 1 pool coupon</li>
+        <li>Gold Card (₦10,000/month): 35 hrs PC + 3 console hrs + 1 VR session</li>
+        <li>VIP Neon Pass (₦20,000/month): Unlimited PC + 10 console hrs + snack discounts</li>
+      </ul>
+      <p class="why">Memberships create predictable monthly income even if walk-ins drop.</p>
+    </div>
+
+    <div class="pricing-block">
+      <h3>🎤 Events & Community Hacks</h3>
+      <ul>
+        <li>FIFA Night (Fridays): ₦500 entry, winner gets 2 free hrs</li>
+        <li>Scrabble/Chess League: ₦1,000 entry for 1-week league, prize = snacks + PC hrs</li>
+        <li>LAN Parties: All 4 PCs linked for CoD/Fortnite nights</li>
+      </ul>
+      <p class="why">Students will market ULTRATEK for free when they post about events.</p>
+    </div>
   </section>
 
   <!-- 📡 Footer -->
@@ -127,14 +157,12 @@
 
   <!-- 🧠 Scripts -->
   <script>
-    // 🔘 Toggle Side Menu
     const toggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('side-menu');
     toggle.addEventListener('click', () => {
       menu.classList.toggle('open');
     });
 
-    // 👉 Swipe Gesture Logic
     let touchStartX = 0;
     let touchEndX = 0;
     document.addEventListener('touchstart', (e) => {
@@ -142,24 +170,13 @@
     });
     document.addEventListener('touchend', (e) => {
       touchEndX = e.changedTouches[0].screenX;
-      handleSwipe();
+      if (touchEndX - touchStartX > 80) menu.classList.add('open');
+      if (touchEndX - touchStartX < -80) menu.classList.remove('open');
     });
-    function handleSwipe() {
-      const swipeDistance = touchEndX - touchStartX;
-      if (swipeDistance > 80) {
-        menu.classList.add('open');
-      } else if (swipeDistance < -80) {
-        menu.classList.remove('open');
-      }
-    }
 
-    // ✨ Active Zone Highlight
     const currentPage = window.location.pathname.split("/").pop();
-    const menuLinks = document.querySelectorAll("#side-menu a");
-    menuLinks.forEach(link => {
-      if (link.getAttribute("href") === currentPage) {
-        link.classList.add("active");
-      }
+    document.querySelectorAll("#side-menu a").forEach(link => {
+      if (link.getAttribute("href") === currentPage) link.classList.add("active");
     });
   </script>
 
