@@ -2,76 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ULTRATEK Game Catalog</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      font-family: sans-serif;
-      background: #111;
-      color: #eee;
       margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #eee;
     }
+
     nav {
-      background: #222;
+      background-color: #222;
       padding: 1rem;
       text-align: center;
     }
     nav a {
       color: #fff;
-      margin: 0 1rem;
+      margin: 0 0.8rem;
       text-decoration: none;
       font-weight: bold;
     }
+
     header {
       text-align: center;
       padding: 2rem 1rem;
     }
-    .filters {
-      text-align: center;
-      margin: 1rem 0;
+
+    .game-catalog {
+      background: #f9f9f9;
+      color: #222;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      border-radius: 8px;
     }
-    .filters button {
+
+    .game-catalog h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #0a74da;
+    }
+
+    .filter-controls {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .filter-controls button {
+      background: #0a74da;
+      color: #fff;
+      border: none;
       margin: 0.3rem;
       padding: 0.5rem 1rem;
-      border: none;
-      background: #444;
-      color: #fff;
-      cursor: pointer;
       border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
     }
-    .filters button:hover {
-      background: #666;
+
+    .filter-controls button:hover {
+      background: #095bb5;
     }
-    .game-section {
-      margin: 2rem;
-      padding: 0 1rem;
+
+    .game-group {
+      display: block;
+      margin-bottom: 2rem;
     }
-    .game-section h2 {
-      border-bottom: 2px solid #444;
-      padding-bottom: 0.5rem;
+
+    .game-group h3 {
+      font-size: 1.3rem;
+      color: #0a74da;
+      margin-bottom: 0.5rem;
     }
-    .game-section ul {
+
+    .game-group ul {
       list-style: none;
       padding-left: 0;
     }
-    .game-section li {
-      margin: 0.5rem 0;
+
+    .game-group li {
+      padding: 0.3rem 0;
+      border-bottom: 1px solid #ddd;
+      font-size: 1rem;
     }
-    .game-section a {
-      color: #0cf;
-      text-decoration: none;
-    }
-    .game-section a:hover {
-      text-decoration: underline;
-    }
-    .hidden {
-      display: none;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: #222;
-      color: #aaa;
+
+    @media (max-width: 600px) {
+      .game-catalog {
+        padding: 1rem;
+      }
+      .game-catalog h2 {
+        font-size: 1.5rem;
+      }
+      .game-group h3 {
+        font-size: 1.1rem;
+      }
+      .game-group li {
+        font-size: 0.95rem;
+      }
     }
   </style>
 </head>
@@ -80,82 +109,145 @@
   <!-- 🔗 Navbar -->
   <nav>
     <a href="index.html">🏠 Home</a>
+    <a href="pc-lan.html">💻 PC LAN</a>
+    <a href="print.html">🖨️ Print</a>
     <a href="reservations.html">🎟️ Reserve</a>
   </nav>
 
   <!-- 🎮 Hero -->
   <header>
     <h1>ULTRATEK Game Catalog</h1>
-    <p>Browse all playable titles across PC LAN, PS5, Xbox Series X, and Nintendo Wii. Filter by genre or platform.</p>
+    <p>Explore our full PC LAN lineup—filter by genre, franchise, or play style.</p>
   </header>
 
-  <!-- 🎯 Genre Filters -->
-  <section class="filters">
-    <button onclick="filterGenre('all')">All</button>
-    <button onclick="filterGenre('shooter')">🔫 Shooter</button>
-    <button onclick="filterGenre('sports')">⚽ Sports</button>
-    <button onclick="filterGenre('racing')">🏎️ Racing</button>
-    <button onclick="filterGenre('adventure')">🧭 Adventure</button>
-    <button onclick="filterGenre('fighting')">🥊 Fighting</button>
-    <button onclick="filterGenre('story')">📖 Story-rich</button>
+  <!-- 🗂️ Game Catalog -->
+  <section class="game-catalog">
+    <h2>🗂️ ULTRATEK PC LAN Game Catalog</h2>
+
+    <!-- 🔍 Filters -->
+    <div class="filter-controls">
+      <button data-filter="all">All</button>
+      <button data-filter="cod">Call of Duty</button>
+      <button data-filter="shooter">Shooters</button>
+      <button data-filter="adventure">Adventure</button>
+      <button data-filter="racing">Racing</button>
+      <button data-filter="sports">Sports</button>
+      <button data-filter="rpg">RPG</button>
+      <button data-filter="multiplayer">Multiplayer</button>
+    </div>
+
+    <!-- 🎮 Game Groups -->
+    <div class="game-group cod shooter multiplayer">
+      <h3>🔫 Call of Duty Series</h3>
+      <ul>
+        <li>Call of Duty (Deluxe Edition)</li>
+        <li>Call of Duty 2</li>
+        <li>Black Ops II – Multiplayer, Zombies</li>
+        <li>Modern Warfare 2 (2009) – Multiplayer</li>
+        <li>United Offensive</li>
+        <li>Modern Warfare</li>
+        <li>WWII</li>
+        <li>MW3</li>
+      </ul>
+    </div>
+
+    <div class="game-group shooter">
+      <h3>🧨 Battlefield & Medal of Honor</h3>
+      <ul>
+        <li>Battlefield 3</li>
+        <li>Bad Company 2</li>
+        <li>Medal of Honor Allied Assault</li>
+        <li>Medal of Honor</li>
+      </ul>
+    </div>
+
+    <div class="game-group shooter multiplayer">
+      <h3>🧟 Zombie & Survival Shooters</h3>
+      <ul>
+        <li>Left 4 Dead</li>
+        <li>Crysis, Crysis 2</li>
+        <li>Halo: Master Chief Collection</li>
+        <li>Half-Life Anthology</li>
+        <li>Orange Box</li>
+      </ul>
+    </div>
+
+    <div class="game-group adventure rpg">
+      <h3>🕵️ Action & Adventure</h3>
+      <ul>
+        <li>Assassin’s Creed Series</li>
+        <li>Batman Arkham Series</li>
+        <li>Prince of Persia</li>
+        <li>Rise of the Tomb Raider</li>
+        <li>Sleeping Dogs</li>
+        <li>Saints Row</li>
+        <li>Spider-Man Series</li>
+        <li>Red Dead Redemption I & II</li>
+        <li>Cyberpunk 2077</li>
+      </ul>
+    </div>
+
+    <div class="game-group racing">
+      <h3>🚗 Racing</h3>
+      <ul>
+        <li>Blur</li>
+        <li>DiRT 3</li>
+        <li>Wreckfest</li>
+        <li>FlatOut</li>
+        <li>Need for Speed: Most Wanted, Rivals</li>
+      </ul>
+    </div>
+
+    <div class="game-group sports">
+      <h3>⚽ Sports & Fighting</h3>
+      <ul>
+        <li>FIFA 23</li>
+        <li>PES 2017</li>
+        <li>WWE 2K19</li>
+        <li>NBA 2K22</li>
+        <li>F1 22</li>
+      </ul>
+    </div>
+
+    <div class="game-group rpg">
+      <h3>🧠 Strategy & RPG</h3>
+      <ul>
+        <li>Fallout 1–3</li>
+        <li>Far Cry 1–3</li>
+        <li>GTA III–V</li>
+        <li>Skyrim</li>
+        <li>Mafia II</li>
+        <li>Minecraft Legends</li>
+      </ul>
+    </div>
+
+    <div class="game-group multiplayer">
+      <h3>🎮 Multiplayer Classics</h3>
+      <ul>
+        <li>Counter-Strike: Global Offensive</li>
+        <li>Borderlands 2 Remastered</li>
+      </ul>
+    </div>
   </section>
 
-  <!-- 💻 PC Games -->
-  <section class="game-section">
-    <h2>💻 PC</h2>
-    <ul>
-      <li class="shooter"><a href="pc-lan.html">💻 🔫 👤🌐 Call of Duty Series</a></li>
-      <li class="shooter"><a href="pc-lan.html">💻 🔫 🌐 Counter Strike Series</a></li>
-      <li class="shooter"><a href="pc-lan.html">💻 🔫 👤🌐 Halo Master Chief Collection</a></li>
-      <li class="shooter"><a href="pc-lan.html">💻 🔫 👤 Marvel Spiderman Remastered</a></li>
-      <li class="sports"><a href="pc-lan.html">💻 ⚽ FIFA 23</a></li>
-      <li class="adventure"><a href="pc-lan.html">💻 🧭 👤🌐 Red Dead Redemption 2</a></li>
-      <li class="fighting"><a href="pc-lan.html">💻 🥊 👤🌐 Street Fighter V</a></li>
-      <li class="fighting"><a href="pc-lan.html">💻 🥊 🌐 Tekken 7</a></li>
-      <li class="story"><a href="pc-lan.html">💻 📖 👤 Witcher Series (1–3)</a></li>
-    </ul>
-  </section>
+  <!-- 🔁 Filter Script -->
+  <script>
+    const buttons = document.querySelectorAll('.filter-controls button');
+    const groups = document.querySelectorAll('.game-group');
 
-  <!-- 🎮 PS5 Games -->
-  <section class="game-section">
-    <h2>🎮 PS5</h2>
-    <ul>
-      <li class="sports"><a href="console.html">🎮 ⚽ 👤🌐 FIFA 23, Efootball 2024</a></li>
-      <li class="adventure"><a href="console.html">🎮 🧭 👤 God of War</a></li>
-      <li class="adventure"><a href="console.html">🎮 🧭 👤 Final Fantasy VII Remake</a></li>
-      <li class="fighting"><a href="console.html">🎮 🥊 🌐 Tekken 7</a></li>
-      <li class="adventure"><a href="console.html">🎮 🧭 👤 Uncharted Legacy of Thieves</a></li>
-      <li class="adventure"><a href="console.html">🎮 🧭 👤 Returnal</a></li>
-      <li class="fighting"><a href="console.html">🎮 🥊 👤 Assassin’s Creed III Remastered</a></li>
-      <li class="adventure"><a href="console.html">🎮 🧭 👤 Assassin’s Creed Chronicle China</a></li>
-    </ul>
-  </section>
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+        groups.forEach(group => {
+          if (filter === 'all' || group.classList.contains(filter)) {
+            group.style.display = 'block';
+          } else {
+            group.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 
-  <!-- 🟩 Xbox Series X Games -->
-  <section class="game-section">
-    <h2>🟩 Xbox Series X</h2>
-    <ul>
-      <li class="sports"><a href="console.html">🟩 ⚽ 👤🌐 FIFA 23, FIFA 22, PES2020</a></li>
-      <li class="shooter"><a href="console.html">🟩 🔫 👤🌐 Battlefield 3 & Bad Company 2</a></li>
-      <li class="racing"><a href="console.html">🟩 🏎️ 👤🌐 Burnout Paradise</a></li>
-      <li class="racing"><a href="console.html">🟩 🏎️ 👤🌐 Dirt 5</a></li>
-      <li class="racing"><a href="console.html">🟩 🏎️ 👤🌐 F1 2021</a></li>
-      <li class="adventure"><a href="console.html">🟩 🧭 👤🌐 Far Cry 5</a></li>
-      <li class="adventure"><a href="console.html">🟩 🧭 👤 GTA Online</a></li>
-      <li class="fighting"><a href="console.html">🟩 🥊 👤🌐 Mortal Kombat II</a></li>
-      <li class="racing"><a href="console.html">🟩 🏎️ 🌐 NFS Heat</a></li>
-    </ul>
-  </section>
-
-  <!-- 🎮 Nintendo Wii Games -->
-  <section class="game-section">
-    <h2>🎮 Nintendo Wii</h2>
-    <ul>
-      <li class="shooter"><a href="console.html">🎮 🔫 🌐 Call of Duty: World at War</a></li>
-      <li class="sports"><a href="console.html">🎮 ⚽ 🌐 FIFA 10, Wii Sports, Wii Sports Resort</a></li>
-      <li class="sports"><a href="console.html">🎮 ⚽ 🌐 Virtua Tennis 2009, Mario Strikers Charged</a></li>
-      <li class="racing"><a href="console.html">🎮 🏎️ 🌐 Mario Kart Wii, NFS Nitro, ProStreet, Undercover</a></li>
-      <li class="adventure"><a href="console.html">🎮 🧭 👤 Zelda, Donkey Kong Barrel Blast</a></li>
-      <li class="adventure"><a href="console.html">🎮 🧭 👤 Super Mario Galaxy 1 & 2</a></li>
-      <li class="fighting"><a href="console.html">🎮 🥊 🌐 Super Smash Bros. Brawl, Tatsunoko vs Capcom</a></li>
-      <li class="story"><a href="console.html">🎮 📖 👤 Resident Evil Series</a></
+</body>
+</html>
