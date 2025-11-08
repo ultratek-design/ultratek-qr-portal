@@ -7,112 +7,74 @@
 </head>
 <body>
 
-  <!-- Unified Navbar -->
+  <!-- 🔗 Navbar -->
   <nav class="navbar">
     <ul>
       <li><a href="index.html">🏠 Home</a></li>
-      <li><a href="console.html">🎮 Console</a></li>
-      <li><a href="pc-lan.html">💻 PC LAN</a></li>
-      <li><a href="vr.html">🕶️ VR</a></li>
-      <li><a href="table-tennis.html">🏓 Table Tennis</a></li>
-      <li><a href="pool.html">🎱 Pool</a></li>
-      <li><a href="board-games.html">🧩 Board Games</a></li>
-      <li><a href="big-screen.html">📺 Big Screen</a></li>
-      <li><a href="print.html">🖨️ Print</a></li>
       <li><a href="reservations.html">🎟️ Reserve</a></li>
     </ul>
   </nav>
 
-  <!-- Hero -->
-  <div class="hero">
-    <h1>🎮 Game Catalog</h1>
-    <p>Explore all playable titles across PC LAN, PS5, and Xbox. Filter by genre, mode, or platform.</p>
-  </div>
+  <!-- 🎮 Hero -->
+  <header class="hero">
+    <h1>ULTRATEK Game Catalog</h1>
+    <p>Browse all playable titles across PC LAN, PS5, and Xbox Series X. Filter by zone or genre.</p>
+  </header>
 
-  <!-- Filters -->
-  <section class="filters">
-    <button onclick="filterGames('all')">All</button>
-    <button onclick="filterGames('pc')">💻 PC</button>
-    <button onclick="filterGames('ps5')">🎮 PS5</button>
-    <button onclick="filterGames('xbox')">🟩 Xbox</button>
-    <button onclick="filterGames('shooter')">🔫 Shooter</button>
-    <button onclick="filterGames('sports')">⚽ Sports</button>
-    <button onclick="filterGames('fighting')">🥊 Fighting</button>
-    <button onclick="filterGames('story')">📖 Story-rich</button>
+  <!-- 💻 PC LAN Games -->
+  <section class="game-section">
+    <h2>💻 PC LAN</h2>
+    <ul>
+      <li>Call of Duty (multiple titles) — Shooter — Single/Multi/LAN</li>
+      <li>Counter Strike (multiple versions) — Shooter — Single/Multi</li>
+      <li>FIFA 23 — Sports/Soccer — Multiplayer</li>
+      <li>Halo Master Chief Collection — Shooter — Single/Multi LAN</li>
+      <li>Marvel Spiderman Remastered — Action — Single Player</li>
+      <li>Red Dead Redemption 2 — Adventure — Single/Online PVP</li>
+      <li>Street Fighter V — Fighting — Single/Multiplayer</li>
+      <li>Tekken 7 — Fighting — Multiplayer</li>
+      <li>Witcher Series (1–3) — Fantasy/Story-rich — Single Player</li>
+    </ul>
   </section>
 
-  <!-- Game Grid -->
-  <section class="game-grid">
-
-    <div class="game-card pc shooter multiplayer">
-      <h3>Call of Duty Black Ops II</h3>
-      <p>PC • Action/Shooter • Single/Multiplayer</p>
-    </div>
-
-    <div class="game-card pc shooter multiplayer">
-      <h3>Counter Strike Source</h3>
-      <p>PC • Action/Shooter • Multiplayer</p>
-    </div>
-
-    <div class="game-card pc sports multiplayer">
-      <h3>FIFA 23</h3>
-      <p>PC • Sports/Soccer • Multiplayer</p>
-    </div>
-
-    <div class="game-card pc story single">
-      <h3>Witcher 3: Wild Hunt</h3>
-      <p>PC • Story-rich • Single Player</p>
-    </div>
-
-    <div class="game-card ps5 sports multiplayer">
-      <h3>Efootball 2024</h3>
-      <p>PS5 • Sports • Single/Multiplayer</p>
-    </div>
-
-    <div class="game-card ps5 story single">
-      <h3>God of War</h3>
-      <p>PS5 • Action/Adventure • Single Player</p>
-    </div>
-
-    <div class="game-card xbox shooter multiplayer">
-      <h3>Battlefield 3</h3>
-      <p>Xbox • Shooter • Single/Multiplayer</p>
-    </div>
-
-    <div class="game-card xbox racing multiplayer">
-      <h3>Dirt 5</h3>
-      <p>Xbox • Racing • Single/Online PVP</p>
-    </div>
-
-    <div class="game-card xbox fighting multiplayer">
-      <h3>Mortal Kombat II</h3>
-      <p>Xbox • Fighting • Single/Multiplayer/Online PVP</p>
-    </div>
-
+  <!-- 🎮 PS5 Games -->
+  <section class="game-section">
+    <h2>🎮 PS5</h2>
+    <ul>
+      <li>FIFA 23 — Sports — Single/Online PVP</li>
+      <li>Efootball 2024 — Sports — Single/Multiplayer</li>
+      <li>God of War — Action/Adventure — Single Player</li>
+      <li>Final Fantasy VII Remake — Action/Adventure — Single Player</li>
+      <li>Tekken 7 — Fighting — Single/Multiplayer</li>
+      <li>Uncharted Legacy of Thieves — Action/Adventure — Single Player</li>
+      <li>Returnal — Action — Single Player</li>
+      <li>Assassin’s Creed III Remastered — Action/Fighting — Single Player</li>
+      <li>Assassin’s Creed Chronicle China — Action — Single Player</li>
+    </ul>
   </section>
 
-  <!-- Symbolic Overlay -->
-  <section class="zone-card">
-    <h2>🧠 Symbolic Overlay</h2>
-    <p>Scan the glyph to filter by genre or platform. Trigger symbolic match formats and reservation logic.</p>
-    <img src="assets/glyphs/games.svg" alt="Games Glyph" />
-    <a href="murals/overlays/games-glyph-guide.svg">Glyph Guide</a>
+  <!-- 🟩 Xbox Series X Games -->
+  <section class="game-section">
+    <h2>🟩 Xbox Series X</h2>
+    <ul>
+      <li>FIFA 23, FIFA 22 — Soccer — 2 Players</li>
+      <li>PES2020 — Sports — Multiplayer</li>
+      <li>Battlefield 3 & Bad Company 2 — Shooter — Single/Multiplayer</li>
+      <li>Burnout Paradise Remastered — Racing — Single/Multiplayer</li>
+      <li>Dirt 5 — Racing — Single/Online PVP</li>
+      <li>F1 2021 — Racing — Single/Online PVP</li>
+      <li>Far Cry 5 — Action — Single/Online PVP</li>
+      <li>GTA Online — Action — Single Player</li>
+      <li>Mortal Kombat II — Fighting — Single/Multiplayer/Online PVP</li>
+      <li>NFS Heat — Racing — 2 Players</li>
+    </ul>
   </section>
 
-  <!-- Footer -->
+  <!-- 📡 Footer -->
   <footer>
     <p>Back to <a href="index.html">ULTRATEK Home</a></p>
+    <p>Built by ULTRATEK • <a href="https://github.com/ultratek-hub/ultratek-games">ultratek-games</a></p>
   </footer>
-
-  <!-- Filter Script -->
-  <script>
-    function filterGames(tag) {
-      const cards = document.querySelectorAll('.game-card');
-      cards.forEach(card => {
-        card.style.display = (tag === 'all' || card.classList.contains(tag)) ? 'block' : 'none';
-      });
-    }
-  </script>
 
 </body>
 </html>
